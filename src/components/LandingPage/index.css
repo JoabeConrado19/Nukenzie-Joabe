@@ -1,0 +1,99 @@
+.landingBody{
+    background: #212529;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+
+}
+
+.landingBody > main{
+
+    width: 80vw;
+    height: 90vh;
+    display:flex;
+
+}
+h1{
+    color:white;
+}
+
+.divDireita{
+
+    height: 100%;
+    width: 60%;
+}
+.divEsquerda{
+    height: 100%;
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center
+}
+
+.divEsquerda > h1 > span{
+    color: #FD377E;
+
+    font-size:32px;
+}
+.divEsquerda > h1 {
+    
+    animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em; 
+    font-size:32px;
+    margin-left: -1px;
+}
+
+.divEsquerda > h2{
+    color: white;
+    font-weight: 800;
+    font-size: 38px;
+    margin: 30px 0 30px 0;
+    
+
+}
+
+.divEsquerda > span{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.divEsquerda > button{
+    width: 241px;
+    height: 48px;
+    background: #FD377E;
+    border: 2px solid #FD377E;
+    border-radius: 8px;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.divEsquerda > button:hover{
+    background-color:white;
+    border:white 3px solid;
+    color:#FD377E;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 38% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }

@@ -1,0 +1,455 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.dashboardMain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.main-container-left {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.main-container-rigth {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 27px;
+}
+
+.form-container {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  width: 363px;
+  height: 331px;
+  padding: 20px;
+  margin-top: 29px;
+  margin-right: 100px;
+}
+.form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form-btn > button {
+  width: 98%;
+  height: 48px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
+
+.form-btn > button:hover {
+  background-color: #ffffff;
+  color: #fd377e;
+  border: #5e5a5a2a 1px solid;
+}
+
+.form-top {
+}
+.form-top > h3 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+.form-top > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-top > div > input {
+  width: 90%;
+  height: 12px;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #868e96;
+  padding: 20px;
+  margin-bottom: 4px;
+  outline: none;
+}
+.form-bottom {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.input-p {
+  display: flex;
+  justify-content: space-between;
+}
+.input-p:nth-child(1) {
+  margin-right: 76px;
+}
+.input-p > p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212529;
+}
+
+.form-top > p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #868e96;
+  margin-bottom: 35px;
+}
+
+.inputs {
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+.input1 {
+  width: 45%;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input1 > p {
+  margin-right: 25px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #343a40;
+}
+.input1 > input {
+  width: 100%;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  height: 46px;
+  outline: 0;
+  display: flex;
+  padding: 0px 16px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input2 {
+  width: 45%;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #343a40;
+  outline: 0;
+}
+
+.input2 > p {
+  margin-right: 25px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #343a40;
+}
+.input2 > input {
+  width: 100%;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  height: 46px;
+  outline: 0;
+  display: flex;
+  padding: 0px 16px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-container {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  width: 363px;
+  height: 56px;
+  margin-top: 16px;
+  margin-right: 100px;
+  padding: 20px;
+}
+
+.total-container > p {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  color: #343a40;
+  margin-top: 20px;
+}
+
+.resumo-filtro {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resumo-filtro > h2 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.resumo-filtro > div > button {
+  width: 92px;
+  height: 40px;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.main-container-rigth > ul {
+  width: 75%;
+  height: 460px;
+  overflow-y: scroll;
+  list-style: none;
+  display: flex;
+
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.main-container-rigth > ul > li {
+  width: 98%;
+  height: 87px;
+  min-height: 87px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  
+  display: flex;
+  background: #f8f9fa;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.card-container > div {
+  width: 70%;
+}
+
+.card-container > div > h3 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.card-container > div > span {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  color: #343a40;
+}
+
+.card-container > span {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 14px;
+  width: 100px;
+  color: #212529;
+  margin-right: 50px;
+  margin-top: 14px;
+}
+
+.card-container > img {
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+
+.card-type {
+  width: 5px;
+  height: 100%;
+  background-color: #03b898;
+  border-radius: 4px 0 0 4px;
+}
+
+.card-type2 {
+  width: 5px;
+  height: 100%;
+  background-color: #ff4949;
+  border-radius: 4px 0 0 4px;
+}
+
+.total-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-container > div > h4 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.total-container > div > span {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  color: #fd377e;
+}
