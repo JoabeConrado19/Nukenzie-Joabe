@@ -98,7 +98,7 @@ function App() {
                 </div>
                 <select
                   className="input2"
-                  onClick={(e) => setValueType(e.target.value)}
+                  onChange={(e) => setValueType(e.target.value)}
                 >
                   <option>Tipo de valor</option>
                   <option value="Entrada">Entrada</option>
