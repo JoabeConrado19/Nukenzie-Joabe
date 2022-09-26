@@ -31,9 +31,9 @@ function App() {
   function AtualizarTotal() {
     total = 0;
     PostNu.map((element) => {
-      if (element.ValueType == "Entrada") {
+      if (element.ValueType === "Entrada") {
         total = parseInt(element.Value) + total;
-      } else {
+      } else if(element.ValueType === "Despesa") {
         total = total - parseInt(element.Value);
       }
     });
