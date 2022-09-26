@@ -5,11 +5,14 @@
     display:flex;
     align-items: center;
     justify-content:space-between;
+    padding: 0 50px ;
+    
     
 
 }
 .mainHeader > img{
-    margin-left: 260px;
+
+
     
 
 }
@@ -23,7 +26,8 @@
     font-weight: 600;
     font-size: 14px;
     color: #343A40;
-    margin-right: 260px;
+    margin-right: 100px;
+ 
     
 }
 
