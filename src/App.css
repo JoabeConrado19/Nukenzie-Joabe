@@ -486,7 +486,7 @@ table {
   .form-container {
     border: 1px solid #e9ecef;
     border-radius: 4px;
-    width: 90%;
+    width: 95%;
     height: 331px;
     padding: 20px;
     margin-top: 29px;
@@ -504,7 +504,7 @@ table {
     padding:  20px;
     margin:16px auto;
     margin-bottom: -30px;
-    margin-right: 37px;
+    margin-left:-20px;
     
 
   }
