@@ -1,5 +1,9 @@
 import ButtonTrash from "../Post-Card/assets/ButtonTrash.png";
 const PostCard = (props) => {
+  function ExcluirPost(){
+    const ListaComRemovido = props.PostNu.filter((item)=>{return item != props.element })
+    props.setPostNu(ListaComRemovido)
+  }
   if (props.ValueType === "Despesa") {
     return (
       <li>
@@ -10,7 +14,7 @@ const PostCard = (props) => {
             <span>{props.ValueType}</span>
           </div>
           <span>R$ {props.Value}</span>
-          <img src={ButtonTrash} className="trashIco"></img>
+          <img src={ButtonTrash} className="trashIco" onClick={()=>{ExcluirPost()}}></img>
         </div>
       </li>
     );
@@ -24,7 +28,7 @@ const PostCard = (props) => {
             <span>{props.ValueType}</span>
           </div>
           <span>R$ {props.Value}</span>
-          <img src={ButtonTrash} className="trashIco"></img>
+          <img src={ButtonTrash} className="trashIco" onClick={()=>{ExcluirPost()}}></img>
         </div>
       </li>
     );

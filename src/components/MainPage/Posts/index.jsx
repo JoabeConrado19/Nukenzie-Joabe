@@ -6,12 +6,15 @@ const Render = (props) => {
   if (Lista === null) {
     Lista = [];
   }
-  console.log(Lista);
+
 
   return (
     <ul>
       {props.listaNu.map((element, index) => (
         <PostCard
+          element={element}
+          PostNu={props.listaNu}
+          setPostNu={props.setPostNu}
           key={index}
           description={element.description}
           Value={element.Value}

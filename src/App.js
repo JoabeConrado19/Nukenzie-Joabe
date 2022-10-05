@@ -42,11 +42,12 @@ function App() {
 
   function Dashboard() {
     setTrue(true);
-    console.log(state);
+
   }
   function Inicio() {
     setTrue(false);
   }
+  
 
   function CriarPost(event) {
     event.preventDefault();
@@ -55,7 +56,6 @@ function App() {
       Value: value,
       ValueType: valueType,
     };
-    console.log(description, value, valueType);
 
     setPostNu([post2, ...PostNu]);
 
@@ -114,8 +114,8 @@ function App() {
             <TotalPreco totalProps ={total}/>
           </div>
           <div className="main-container-rigth">
-            <Resumo/>
-            <Render listaNu={PostNu} />
+            <Resumo listaNu={PostNu} setPostNu={setPostNu}/>
+            <Render listaNu={PostNu} setPostNu={setPostNu} />
           </div>
         </div>
       </main>
